@@ -403,7 +403,7 @@ head(penguins)
 
 ## Choosing a graph
 
-## What are my options?
+What are my options?
 
 ##
 
@@ -461,6 +461,14 @@ penguins %>%
 
 ## Labels
 
+- title
+- subtitle?
+- x axis
+- y axis
+- legend(s)
+
+Make sure to include the unit of measure!
+
 ## 
 
 ```{r}
@@ -481,6 +489,10 @@ penguins %>%
 
 ## Colors
 
+- Easier to use with categorical data
+- Color-blind friendly
+- Should be used meaningfully
+
 ##
 
 ```{r}
@@ -497,6 +509,24 @@ penguins %>%
     y = "body mass (g)",
     x = "species",
     fill = "species"
+  )
+```
+
+##
+
+```{r}
+#| echo: false
+penguins %>%
+  na.omit() %>%
+  ggplot(aes(x = species, y = flipper_length_mm, fill = body_mass_g)) +
+  geom_boxplot() +
+  geom_point(shape = 21, size = 3, alpha = 0.7, position = position_jitter(width = 0.2)) +
+  scale_fill_viridis_c(option = "mako") +
+  labs(
+    title = "Flipper Length and Body Mass of Penguins",
+    x = "Species",
+    y = "Flipper Length (mm)",
+    fill = "Body Mass (g)"
   )
 ```
 
