@@ -109,7 +109,7 @@ data.frame(
   kable(., col.names = c("",""), align = "l")
 ```
 
-## {background-color="black" background-image="../assets/dino_data.gif" background-size="contain"}
+## {background-color="black" background-image="./assets/dino_data.gif" background-size="contain"}
 
 ::: footer
 [datasaurus: same stats, different graph](https://www.research.autodesk.com/publications/same-stats-different-graphs/)
