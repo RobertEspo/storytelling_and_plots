@@ -192,6 +192,14 @@ boxplot
 
 ##
 
+![](assets/usa_bad_plot.jpg)
+
+##
+
+![](assets/usa_ok_plot.jpg)
+
+##
+
 ```{r}
 #| label: p-goals-1
 #| echo: false
